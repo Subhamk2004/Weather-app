@@ -63,7 +63,15 @@ $(document).ready(function(){
             $("#srbg").show(0);
         }
     });
-
+    function animatee(){
+        $(".pngs").animate({
+            height:"15vw"
+        },3000);
+        $(".pngs").animate({
+            height:"14vw"
+        },3000);
+    }
+    animatee();
     console.log(hr  + " : " + min);
     $("#get").click(function(){
         city = $("#inp:text").val();
