@@ -1,0 +1,70 @@
+.degreediv{
+    display:flex;
+    flex-direction: row;
+}
+.realtemp , .realdate{
+    width:50%;
+}
+.realtemp{
+    display: flex;
+}
+#datep{
+    display:flex;
+    justify-content: end;
+}
+.wdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.63);
+    height:95%;
+    width:55%;
+    margin-bottom: 10%;
+    border:solid rgba(45, 41, 68, 0.384);
+    border-radius: 10px;
+}
+.feel , .wspeed , .humid{
+    display: flex;
+    gap:50%;
+}
+.bgimg{
+    height:100%;
+    width:100%;
+    position:fixed;
+    top:0;
+    z-index: -1;
+}
+body{
+    color:rgb(250, 255, 206);
+}
+.pngs{
+    height:14vw;
+}
+.weatheranime{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+.inpdiv{
+    display:flex;
+    justify-content: center;
+    gap:1vw;
+    margin-top: 5%;
+}
+#tempp{
+    margin-left: 12px;
+}
+h1{
+    font-weight: bold;
+    font-size: 4vw;
+}
+h2{
+    font-weight: bold;
+    font-size: 3vw;
+}
+.realstat{
+   display: flex;
+}
+.finetune{
+    font-size: 2vw;
+}
