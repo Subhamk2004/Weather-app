@@ -101,7 +101,7 @@ $(document).ready(function(){
             $("#sunset").show(0);
             $("#stbg").show(0);
         }
-        else if (hr>19)
+        else if (hr>=19)
         {
             $("#moon").show(0);
             $("#nbg").show(0);
