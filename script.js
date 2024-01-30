@@ -37,7 +37,7 @@ $(document).ready(function(){
         document.getElementById("wsp").innerHTML = wind_speed;
         document.getElementById("timep").innerHTML ="  " + hr + " : " + min;
         console.log(temp);
-        if (hr<19 && hr>17)
+        if (hr<19 && hr>=17)
         {
             $("#sunset").show(0);
             $("#stbg").show(0);
@@ -52,7 +52,7 @@ $(document).ready(function(){
             $("#moon").show(0);
             $("#nbg").show(0);
         }
-        else if (hr<17 && hr>11)
+        else if (hr<17 && hr>=11)
         {
             $("#sun").show(0);
             $("#sbg").show(0);
@@ -66,6 +66,8 @@ $(document).ready(function(){
     
     console.log(hr  + " : " + min);
     $("#get").click(function(){
+        $(".wdiv").slideUp(500);
+        $(".wdiv").slideDown(500);
         city = $("#inp:text").val();
         console.log(city);
         const settings = {
@@ -94,7 +96,7 @@ $(document).ready(function(){
         document.getElementById("timep").innerHTML ="  " + hr + " : " + min;
         console.log(temp);
         
-        if (hr<19 && hr>17)
+        if (hr<19 && hr>=17)
         {
             $("#sunset").show(0);
             $("#stbg").show(0);
@@ -109,7 +111,7 @@ $(document).ready(function(){
             $("#moon").show(0);
             $("#nbg").show(0);
         }
-        else if (hr<17 && hr>11)
+        else if (hr<17 && hr>=11)
         {
             $("#sun").show(0);
             $("#sbg").show(0);

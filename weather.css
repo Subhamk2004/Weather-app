@@ -22,7 +22,6 @@
     margin-bottom: 10%;
     border:solid rgba(0, 0, 0, 0.034);
     border-radius: 20px;
-    
     backdrop-filter: blur(50px);
 }
 .feel , .wspeed , .humid{
@@ -30,8 +29,8 @@
     gap:50%;
 }
 .bgimg{
-    height:100%;
-    width:100%;
+    height:100vh;
+    width:100vw;
     position:fixed;
     top:0;
     z-index: -1;
@@ -40,12 +39,13 @@ body{
     color:rgb(250, 255, 206);
 }
 .pngs{
-    height:14vw;
+    height:14vh;
 }
 .weatheranime{
     display: flex;
     justify-content: center;
     margin-bottom: 3%;
+
 }
 .inpdiv{
     display:flex;
@@ -70,12 +70,49 @@ h2{
 .finetune{
     font-size: 2vw;
 }
-.pngs {
-    animation: bounce 1s infinite;
-}
 
-@keyframes bounce {
-    0% { height: 14vw; }
-    50% { height: 15vw; }
-    100% { height: 14vw; }
+@media screen and (max-width:480px)
+{
+    h1{
+        font-size: 9vw;
+        color:rgb(239, 255, 251);
+        margin-top:20vw;
+    }
+    input{
+        background-color: rgb(164, 209, 230);
+        border:1px solid 0px 1px;
+        border-radius: 10px;
+        box-shadow: 0 2vw 5px rgb(52, 91, 107);
+    }
+    h2{
+        font-size: 6vw;
+    }
+    .finetune{
+        font-size: 4vw;
+    }
+    .bgimg{
+        height:100vh;
+        width:1200px;
+    }
+    .pngs{
+        height:10vh;
+    }
+    input:hover{
+        background-color: rgb(127, 197, 255);
+    }
+    .inpdiv{
+        margin-top: 10%;
+    }
+    .wdiv{
+    background-color: rgba(0, 0, 0, 0.137);
+    height:120vw;
+    width:83%;
+    border:solid rgba(0, 0, 0, 0.034);
+    border-radius: 34px;
+    backdrop-filter: blur(30px);
+    margin-top: 8%;
+    }
+    .weatheranime{
+        height:99px;
+    }
 }
